@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-1.11.2.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Tucker's Grocery Outlet</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h1>Categories</h1>
+        <ul id="categories">
+
+        </ul>
+        <h2>Create a category</h2>
+        <form id="new-category">
+          <div class="form-group">
+
+            <label for="category-name">Category Title: </label>
+            <input type="text" class="form-control" id="category-name">
+          </div>
+
+          <button type="submit" class="btn">Add</button>
+        </form>
+      </div>
+      <div class="col-sm-6">
+        <div id="show-categories">
+          <h4></h4>
+          <div id="show-products">
+            <div class="new-product">
+              <ul id="products">
+
+              </ul>
+            </div>
+          </div>
+
+        <h2>Add a product:</h2>
+        <form id="new-product">
+          <div class="form-group">
+            <label for="product-name">Product Name</label>
+            <input type="text" class="form-control" id="product-name">
+          </div>
+
+          <div class="form-group">
+            <label for="description">Description</label>
+            <input type="text" class="form-control" id="description">
+          </div>
+
+          <div class="form-group">
+            <label for="price">$ Price</label>
+            <input type="text" class="form-control" id="price">
+          </div>
+
+          <button type="submit" class="btn">Add</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
