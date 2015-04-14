@@ -1,0 +1,12 @@
+#show-orders {
+  display: none;
+}
+
+.pizza-order {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.pizza-order:hover{
+  text-decoration: underline;
+}
