@@ -5,30 +5,34 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-1.11.2.js"></script>
   <script src="js/scripts.js"></script>
-  <title>Tucker's Grocery Outlet</title>
+  <title>Tucker's Grocery</title>
 </head>
 <body>
   <div class="container">
+    <h3>Tucker's Grocery</h3>
+
     <div class="row">
       <div class="col-sm-6">
-        <h1>Categories</h1>
+        <h4>Categories:</h4>
         <ul id="categories">
 
         </ul>
-        <h2>Create a category</h2>
+
+        <h6>Create a Category:</h6>
         <form id="new-category">
           <div class="form-group">
-
-            <label for="category-name">Category Title: </label>
-            <input type="text" class="form-control" id="category-name">
+            <label for="new-category-title">Title</label>
+            <input type="text" class="form-control" id="new-category-title">
           </div>
 
           <button type="submit" class="btn">Add</button>
         </form>
       </div>
+
       <div class="col-sm-6">
         <div id="show-categories">
           <h4></h4>
+
           <div id="show-products">
             <div class="new-product">
               <ul id="products">
@@ -37,26 +41,25 @@
             </div>
           </div>
 
-        <h2>Add a product:</h2>
-        <form id="new-product">
-          <div class="form-group">
-            <label for="product-name">Product Name</label>
-            <input type="text" class="form-control" id="product-name">
-          </div>
+          <h5>Add a Product:</h5>
+          <form id="add-new-product">
+            <div class="form-group">
+              <label for="new-name">Name</label>
+              <input type="text" class="form-control" id="new-name">
+            </div>
+            <div class="form-group">
+              <label for="new-description">Description</label>
+              <input type="text" class="form-control" id="new-description">
+            </div>
+            <div class="form-group">
+              <label for="new-price">Price</label>
+              <input type="text" class="form-control" id="new-price">
+            </div>
 
-          <div class="form-group">
-            <label for="description">Description</label>
-            <input type="text" class="form-control" id="description">
-          </div>
+            <button type="submit" class="btn">Add</button>
+          </form>
 
-          <div class="form-group">
-            <label for="price">$ Price</label>
-            <input type="text" class="form-control" id="price">
-          </div>
-
-          <button type="submit" class="btn">Add</button>
-        </form>
+        </div>
       </div>
-    </div>
-  </body>
-</html>
+    </body>
+    </html>

@@ -1,9 +1,6 @@
-// describe("NewOrder", function() {
-//   describe("(newSize)", function() {
-//     it("returns small", function(NewOrder) {
-//       // var testOrder = Object.create(Order);
-//       testOrder.newSize(4);
-//       expect(testOrder.newSize).to.equal("small")
-//   });
-// });
-// }):
+describe"newCategory", function() {
+    it("returns the category name", function() {
+      var testCategory.CategoryName("Dairy");
+      expect(testCategory.CategoryName).to.equal("Dairy");
+    });
+  });
