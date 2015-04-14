@@ -1,6 +1,7 @@
 var thisCategory = {}
 
 $(document).ready(function() {
+  $("form#add-new-product").hide();
 
   $("form#new-category").submit(function(event) {
     event.preventDefault();
@@ -16,13 +17,16 @@ $(document).ready(function() {
 
       $("#show-categories").show();
       $("#show-categories h4").text(newCategory.categoryTitle);
+      $("form#add-new-product").show();
 
-
-      $("ul#products").text("");
+      $("ul#products").append("<li><span class='product'>" + newProduct.productName + "</span></li>");
       newCategory.products.forEach(function(product) {
-        $("ul#products").append("<li><span class= 'update-product'>" + product.productName + product.productDescription + product.productPrice + "</span></li>")
-      });
+        $(".product").last().click(function() {
 
+        $("#products").show();
+        $(".price").text(product.productPrice);
+        $(".name").text(product.productName);
+        $(".description").text(product.productDescription);
 
       $("form#add-new-product").off("submit")
       $("form#add-new-product").on("submit", function(event) {
@@ -36,10 +40,13 @@ $(document).ready(function() {
           var newProduct = { productName: inputtedProductName, productDescription: inputtedProductDescription, productPrice: inputtedProductPrice }
           newCategory.products.push(newProduct);
         });
-
+      
         $("input#add-new-product").val("");
 
         $("ul#products").text("");
+        $("input#new-name").val(" ")
+        $("input#new-description").val(" ")
+        $("input#new-price").val(" ")
 
         newCategory.products.forEach(function(product) {
           $("ul#products").append("<li><span class='update-product'>" + product.productName + product.productDescription + product.productPrice + "</span></li>");

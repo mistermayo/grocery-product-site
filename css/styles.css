@@ -1,12 +1,12 @@
-#show-orders {
+#show-category {
   display: none;
 }
 
-.pizza-order {
+.category-title {
   cursor: pointer;
   color: #0088cc;
 }
 
-.pizza-order:hover{
+.category-title:hover{
   text-decoration: underline;
 }
